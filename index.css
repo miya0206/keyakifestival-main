@@ -1,0 +1,242 @@
+/* ===== 基本設定（スマホ） ===== */
+
+*{
+  box-sizing: border-box;
+  font-family: "NotosansJP";
+}
+
+p{
+  margin:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background-color: #f2f8fe;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+h2{
+  margin:0;
+}
+
+/* ===== header ===== */
+
+header{
+  display:flex;
+  width:100%;
+  height:100vh;
+
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+  overflow:hidden;
+}
+
+header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-color:lavender;
+  background-image:url(poster.webp);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
+  z-index:-2;
+}
+
+.keyakifes,
+.content{
+  margin:0;
+}
+
+.date{
+  font-weight:700;
+  font-size:1.5rem;
+  text-align:center;
+  color:white;
+  position:absolute;
+  bottom: 70px;
+  right:40px;
+}
+ 
+.date::after{
+  content:"";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #93a6d389;
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+  }
+
+
+  .keyakifes{
+  font-weight:700;
+  font-size:1.35rem;
+  text-align:center;
+  color:white;
+  position:absolute;
+  top: 3%;
+  left:10px;
+  }
+
+  .keyakifes::after{
+  content:"";
+  position: absolute;
+  width: 240px;
+  height: 100px;
+  background: #93a6d389;
+  border-radius: 80%;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+  }
+
+.column{
+  margin:0 7vw;
+  margin-top:5px;
+  margin-bottom:10px;
+  padding:5px;
+  border:1px solid rgba(182,196,219);
+}
+
+.inform{
+  padding:5px 5vw;
+  border:1px solid #bfccef;
+  position:relative;
+  text-align:center;
+  border: none;
+  border-bottom: 1.5px solid rgba(182,196,219,1);
+}
+
+.text{
+  padding:5px 4vw;
+  font-size:16px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr; /* スマホは1列 */
+  gap:20px;
+
+  margin-top:30px;
+  padding:0 20px;
+}
+
+.item{
+  position:relative;
+
+  width:100%;
+  aspect-ratio:0.8/0.5;
+
+  margin:auto;
+}
+
+.item h2{
+  position:absolute;
+  top:5%;
+  left:5%;
+  font-size:1rem;
+}
+
+.item a{
+  position:absolute;
+  bottom:5%;
+  right:5%;
+}
+
+.violet{
+  border:solid #9966ff;
+}
+
+.orange{
+  border:solid orange;
+}
+
+.skyblue{
+  border:solid skyblue;
+}
+
+/* ===== タブレット ===== */
+
+@media (min-width:768px){
+
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .keyakifes{
+    font-size:2rem;
+  }
+}
+
+/* ===== PC ===== */
+
+@media (min-width:1024px){
+
+  .grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  header{
+    min-height:620px;
+    height:100vh;
+  }
+
+  header::after{
+    background-size:contain; 
+  }
+
+  .keyakifes::after{
+  content:"";
+  position: absolute;
+  width: 350px;
+  height: 230px;
+  background: #93a6d389;
+  border-radius: 80%;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+  }
+
+  .date{
+    font-size:2.2rem;
+    bottom:125px;
+    right:70px;
+  }
+
+  .date::after{
+  content:"";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #93a6d389;
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+  }  
+}

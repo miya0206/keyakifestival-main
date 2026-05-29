@@ -1,0 +1,36 @@
+footer{
+    padding:10px 5vw;
+    background-color: #d4deed;
+    width: 100%;
+    height:fit-content;
+}
+
+h4,h3{
+    margin:0;
+}
+
+a{
+  font-size:18px; /* 文字サイズ */
+  color:rgba(34, 34, 36,1); /* 文字色 */
+  text-decoration:none; /* 下線を消す */
+}
+
+.flex{
+    display: flex;
+}
+
+.tagF{
+    margin: auto 0;
+    margin-right: 10px;
+    padding: 4px 5px;
+    width: 80px;
+    text-align: center;
+    border: solid 2px rgb(46, 40, 87);
+    border-radius: 5px;
+}
+
+@media (min-width:1024px){
+    a{
+        font-size:22px;
+    }
+}
