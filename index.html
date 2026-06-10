@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="hamburger.css">
-    <link rel="stylesheet" href="timetable.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="icon" href="校章.ico">
     <title>第10回けやき祭</title>
@@ -15,19 +14,53 @@
         <div class="keyakifes">第10回 古河中等文化祭<br>けやき祭</div> 
         <div class="date"><p>一般公開</p><p>6月20日（土）</p><p>9:00~14:30</p></div> 
         <div class="poster"></div>
-    </header>  
+    </header> 
+    
+       <aside>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="mogi.html">模擬店</a></li>
+        <li><a href="touroku.html">事前登録</a></li> 
+        <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+      // メニューの表示/非表示を切り替える関数
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // メニューが開く・閉じるの切り替え
+      }
+
+      // メニュー項目がクリックされた時の処理
+      document.querySelectorAll(".menu ul li a").forEach((link) => {
+        link.addEventListener("click", function (event) {   
+          event.preventDefault(); // デフォルトのリンク遷移を防ぐ
+          const href = link.getAttribute("href");
+          window.location.href = href; // 新しいページへ遷移（現在のタブ）
+        });
+      });
+    </script>
+    </aside>
+    
+    <div class="column">
+      <h2 class="inform">事前登録</h2>
+      <p class="text">事前登録フォームを公開しました。以下のリンクにアクセスして事前登録をしてください。<br>      <a href="touroku.html" id="a">詳細はこちら</a>
+</p>
+    </div>
+
+    <br>
 
     <div class="column">
-      <h2 class="inform">＜お知らせ＞</h2>
-      <p class="text">
-        <b>現在、事前登録フォームが公開されていません。今週中に公開予定なのでもうしばらくお待ちください。
-        </b>
-      </p>
-      <p class="text"><b>随時更新するので、最新の情報を確認して下さい。</b></p>
-    </div>
-      
-    <div class="column">
-      <h2 class="inform">＜はじめに＞</h2>
+      <h2 class="inform">はじめに</h2>
       <p class="text">古河中等教育学校の文化祭、「けやき祭」は毎年夏の足音が聞こえてくる時期に開催される、年に一度のビッグイベントです。
       そして今年のテーマは「CREAT10N(CREATION)」。
       第10回という記念すべき節目であり、新たな10年に向けたスタートラインでもあります。今までの10年という歴史と、これからの10年を繋ぐ、架け橋のような年。
@@ -38,7 +71,7 @@
     <br>
 
     <div class="column">
-      <h2 class="inform">＜重要なお知らせ＞</h2>
+      <h2 class="inform">重要なお知らせ</h2>
       <p class="text">
         文化祭実施にあたり、いくつか重要なお知らせがございます。以下にお目を通して頂き、来場される方はご理解ご協力をお願いいたします。
       </p>
@@ -50,7 +83,52 @@
 
       </p>
     </div>
-      
+    
+    <br>
+
+    <div class="column">
+      <h2 class="inform">会場内における注意事項</h2>
+      <p class="text">
+        ご来場のみなさま全員が快適に、安心して文化祭をお楽しみいただけるよう、以下の点にご協力をお願いいたします。 なお、当日は教職員や腕章をつけた実行委員が会場内を巡回しておりますので、何かお困りのことがございましたら、お気軽にお声がけください。
+      </p>
+
+      <p class="text">
+        <b>■会場内での禁止行為</b>
+      </p>
+
+      <p class="text">
+        会場内では、以下の行為を禁止とさせていただきます。
+        <p class="text">
+          ・喫煙<br>茨城県立の公立学校においては、校舎内・校舎外を問わず、禁煙となっております。 なお、喫煙所は設置しておりませんので、ご了承ください。<br>
+          ・危険物の持ち込み<br>
+          ・体育館での撮影<br>
+          ・酒類の持ち込み及び飲酒<br>
+          ・ペットの連れ込み（盲導犬・介助犬を除く）
+      </p>
+    </div>
+    
+    <br>
+
+    <div class="column">
+      <h2 class="inform">あいさつ</h2>
+      <p class="text">
+        <b>■実行委員長</b><br>
+        第10回という節目を迎えたけやき祭に、皆様をお迎えできることを嬉しく思います。
+”CREAT10N〜創り繋げる10年の軌跡～”　
+このテーマのもと、限られた時間の中で皆様に楽しんで頂けるよう、生徒一丸となって準備を重ね、本校ならではの「創造」を形にしてきました。
+このけやき祭が、皆様にとって思い出に残る温かい時間となれば幸いです。
+是非お楽しみください！
+      </p><br>
+
+      <p class="text">
+        <b>■生徒会長</b><br>
+        2026年〝けやき祭〟開幕です！
+けやき祭に向けて実行委員をはじめとした生徒全員が、個人のもつ力を仲間のために発揮しています。当ホームページやパンフレット、校内装飾など細部まで心を込めて制作しました。
+けやき祭が第10回を迎えられたのも、先生方や保護者の方々、地域の皆様の支えがあったからだと感謝しております。そして、我が校の特色としてけやき祭を盛り上げてくださった先輩方の熱いお気持ちと努力や協力があったからこそ、こうして今もけやき祭が古河中等生の誇れる行事になっていると感じております。
+ー私たち古河中等生のこの行事にかける思いと熱気ー
+ぜひ本校で感じ取ってください！
+      </p>
+    </div>
   </body>
 
     <footer>
