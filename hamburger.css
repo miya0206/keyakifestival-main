@@ -1,0 +1,110 @@
+/* ===== 基本スタイル ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 横スクロール防止 */
+}
+
+/* ===== ハンバーガーメニュー ===== */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 30px;
+  height: 25px;
+
+  z-index: 9999;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* ===== スライドメニュー ===== */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+
+  width: 80%;
+  max-width: 200px;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.9);
+  transition: right 0.8s ease;
+
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.menu.open {
+  right: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background: black;
+}
+
+/* ===== コンテンツ ===== */
+.main-content {
+  padding: 20px;
+  margin-right: 320px;
+}
+
+.square {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  border: 2px solid black;
+}
+
+/* ===== タブレット ===== */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .keyakifes {
+    font-size: 2rem;
+  }
+}
+
+/* ===== PC ===== */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    min-height: 620px;
+    height: 100vh;
+  }
+}

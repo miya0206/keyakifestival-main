@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="access.css">
+    <link rel="icon" href="校章.ico">
+    <title>第10回けやき祭</title>
+  </head>
+  <body>
+
+    <header>
+        <h1 class="daimei">アクセス</h1>
+    </header>
+
+  <main>
+        <div class="access">
+            <div class="title"><h2 class="content">＜公共交通機関＞</h2></div>
+            <h3>■JRバス関東 51系統 「東古河線（古河駅～大網）」</h3><br>
+            <p>乗車バス停: 古河駅東口
+            <br>下車バス停: 駒羽根第一（学校まで徒歩約7分）
+            <br>所要時間: 約25分</p>
+            <br><h3>■JRバス関東 31系統 「駒羽根循環線」</h3>
+            <p>乗車バス停: 古河駅東口
+            <br>下車バス停: 女沼仲町（学校まで徒歩約10分）
+            <br>所要時間: 約25分</p>
+            <br><a href="https://www.jrbuskanto.co.jp/local_guide/local_koga.html">JRバスの詳細はこちら</a>
+            
+            <br><br><h3>■ぐるりん号 「総和庁舎・病院コース（時計回り・反時計回り）」</h3>
+            <p>乗車バス停: 古河駅東口
+            <br>下車バス停: 古河中等教育学校前
+            <br>所要時間: 約20～30分</p>
+            <br><a href="https://www.city.ibaraki-koga.lg.jp/soshiki/koutuu/3/16925.html">ぐるりん号の詳細はこちら</a>
+            
+            <br><br><h3>■朝日バス「古河駅西口-境車庫線」</h3>
+            <p>乗車バス停: 古河駅西口
+            <br>下車バス停: 磯部（学校まで徒歩約10分）
+            <br>所要時間: 約25分</p>
+            <br><a href="https://transfer-internal.navitime.biz/asahibus/pc/diagram/BusDiagram?linkId=00072807&nodeId=00450722&updown=1">朝日バスの詳細はこちら</a>
+        </div>
+        <h2 id="a2">駐車場</h2>
+        <div class="flexP">
+            <img src="img/学校周辺図.png" alt="">
+            <img src="img/敷地周辺図.png" alt="">
+        </div>
+
+        <h2>所在地</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.859174365994!2d139.74521057580958!3d36.169981372433526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018b4ebe9171335%3A0x45094f858adb3c27!2z6Iyo5Z-O55yM56uL5Y-k5rKz5Lit562J5pWZ6IKy5a2m5qCh!5e0!3m2!1sja!2sjp!4v1713771856219!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+
+           <aside>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="mogi.html">模擬店</a></li>
+        <li><a href="touroku.html">事前登録</a></li> 
+        <li><a href="timetable.html">タイムテーブル</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+      // メニューの表示/非表示を切り替える関数
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // メニューが開く・閉じるの切り替え
+      }
+
+      // メニュー項目がクリックされた時の処理
+      document.querySelectorAll(".menu ul li a").forEach((link) => {
+        link.addEventListener("click", function (event) {   
+          event.preventDefault(); // デフォルトのリンク遷移を防ぐ
+          const href = link.getAttribute("href");
+          window.location.href = href; // 新しいページへ遷移（現在のタブ）
+        });
+      });
+    </script>
+    </aside>
+
+
+
+        <footer>
+        <div class="school">
+            <h3>茨城県立古河中等教育学校</h3>
+            <p>〒306-0225 茨城県古河市磯部846</p>
+        </div>
+        <br>
+        
+        <div class="flex"><div class="tagF"><h4>TEL</h4></div>
+        <a href="tel:0280-92-4551"><p>0280-92-4551</p></a></div>
+        <div class="flex"><div class="tagF"><h4>HP</h4></div>
+        <a href="https://www.koga-cs.ibk.ed.jp"><p>https://www.koga-cs.ibk.ed.jp</p></a></div>
+        <div class="flex"><div class="tagF"><h4>Email</h4></div>
+        <a href="mailto:koho@koga-cs.ibk.ed.jp"><p>koho@koga-cs.ibk.ed.jp</p></a></div>
+        <br><p style="text-decoration: underline";></p>
+        <address>
+            <p>&copy;2026
+             茨城県立古河中等教育学校文化祭実行委員会 All Rights Reserved.</p>
+        </address>
+    </footer>
+  </body>

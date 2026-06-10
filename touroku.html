@@ -1,0 +1,112 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="touroku.css">
+    <link rel="icon" href="校章.ico">  
+    <title>事前登録 | 第10回 けやき祭</title>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="raizyou">
+        <h2>
+            ＜来場登録＞
+        </h2>
+        <p>
+        「事前登録」が必須となります。<b>「事前登録」をされていない方つきましては入場ができません。</b>「事前登録」をされていないまま当日来場された場合は、その場で「事前登録」をして頂く必要がございます。 混雑緩和のためにご協力をお願いします。
+         登録の際に入力いただいた個人情報については、管理者が責任を持って管理し、文化祭終了後来場者の皆様への連絡を必要としないと判断でき次第、データを削除・破棄いたします。
+        </p><br>
+        <p>
+            <b>下記のフォームから事前登録を行ってください。<a href="https://docs.google.com/forms/d/e/1FAIpQLSdBAS9kQmzCxArSVMhEcLbpF0kjeCvHBbDugY28zUb74jICpQ/viewform"><p class="touroku">事前登録</p></a></b>
+        </p><br>
+        <p>
+            <b>また、小学生応援企画を応募する方は下記のフォームから事前登録を行ってください。<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfg-942QV-exHGUiqvpJ6FxIk75kHyQi4Ic66ceqUv_AQtNkA/viewform?usp=publish-editor">小学生企画</a></b>
+        </p>
+    </div>
+
+    <div class="raizyou">
+        <h2>
+            ＜注意事項＞
+        </h2>
+        <p>
+            入場時の混雑緩和のため、来場登録を実施します。<b>今年度は事前予約無しでは入場できません。保護者の皆様に関しては授業参観用のネームタグを入場受付時に提示していただきます。</b>
+        </p><br>
+        <p>
+            <b>■当日の入場について</b>
+        </p>
+        <p>
+            1. 「事前登録フォーム」より必要事項の入力・確認の上送信してください。
+        </p>
+        <p>
+            2.　送信後に表示される「入場許可画像」をスクリーンショット等で保存してください。
+        </p>
+        <p>
+            3.　文化祭当日、受付時に画像を表示させてお待ち下さい。
+        </p>
+        <p>
+            4.　入場開始後、受付が確認をいたします。
+        </p>
+    </div>
+    
+       <aside>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="mogi.html">模擬店</a></li>
+        <li><a href="touroku.html">事前登録</a></li> 
+        <li><a href="timetable.html">タイムテーブル</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+      // メニューの表示/非表示を切り替える関数
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // メニューが開く・閉じるの切り替え
+      }
+
+      // メニュー項目がクリックされた時の処理
+      document.querySelectorAll(".menu ul li a").forEach((link) => {
+        link.addEventListener("click", function (event) {   
+          event.preventDefault(); // デフォルトのリンク遷移を防ぐ
+          const href = link.getAttribute("href");
+          window.location.href = href; // 新しいページへ遷移（現在のタブ）
+        });
+      });
+    </script>
+    </aside>
+
+        <footer>
+        <div class="school">
+            <h3>茨城県立古河中等教育学校</h3>
+            <p>〒306-0225 茨城県古河市磯部846</p>
+        </div>
+        <br>
+        
+        <div class="flex"><div class="tagF"><h4>TEL</h4></div>
+        <a href="tel:0280-92-4551"><p>0280-92-4551</p></a></div>
+        <div class="flex"><div class="tagF"><h4>HP</h4></div>
+        <a href="https://www.koga-cs.ibk.ed.jp"><p>https://www.koga-cs.ibk.ed.jp</p></a></div>
+        <div class="flex"><div class="tagF"><h4>Email</h4></div>
+        <a href="mailto:koho@koga-cs.ibk.ed.jp"><p>koho@koga-cs.ibk.ed.jp</p></a></div>
+        <br><p style="text-decoration: underline";></p>
+        <address>
+            <p>&copy;2026
+             茨城県立古河中等教育学校文化祭実行委員会 All Rights Reserved.</p>
+        </address>
+    </footer>
+</body>

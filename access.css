@@ -1,0 +1,101 @@
+*{
+  font-family: "NotosansJP";
+}
+
+p{
+    margin:0;
+}
+
+h2{
+    margin:0;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background-color: #f2f8fe;
+}
+
+
+header{
+  display:flex;
+  width:100%;
+  height:30vh;
+
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+  overflow:hidden;
+  background-image: url(img/access-pic.webp);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.daimei{
+    position:absolute;
+    color:white;
+    left:10px;
+    top:0px;
+
+    z-index: 1;
+}
+
+.daimei::after{
+  content: "";
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  left: 40%;
+  top: -100px;
+
+  transform: translateX(-50%);
+}
+
+.title{
+    width: fit-content;
+    margin:auto;
+    border-bottom:5px solid#d2e5fd;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+.access{
+    margin:10px;
+    border:2px solid #d2e5fd;
+    padding:10px;
+}
+
+a{
+    color:blue;
+    font-size: 1rem;
+}
+
+@media (min-width:1024px){
+header{
+  display:flex;
+  width:100%;
+  height: 250px;
+
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+  overflow:hidden;
+  background-image: url(img/access-pic.webp);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
+}
+}

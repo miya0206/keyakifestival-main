@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mogi.css"/>
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="校章.ico">
+    <title>第10回けやき祭</title>
+  </head>
+  <body>
+    <header>
+        <h1 class="daimei">模擬店</h1>
+    </header>
+
+       <aside>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="mogi.html">模擬店</a></li>
+        <li><a href="touroku.html">事前登録</a></li> 
+        <li><a href="timetable.html">タイムテーブル</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+      // メニューの表示/非表示を切り替える関数
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // メニューが開く・閉じるの切り替え
+      }
+
+      // メニュー項目がクリックされた時の処理
+      document.querySelectorAll(".menu ul li a").forEach((link) => {
+        link.addEventListener("click", function (event) {   
+          event.preventDefault(); // デフォルトのリンク遷移を防ぐ
+          const href = link.getAttribute("href");
+          window.location.href = href; // 新しいページへ遷移（現在のタブ）
+        });
+      });
+    </script>
+    </aside>
+
+    <h2> 模擬店一覧</h2>
+
+    <div class="mogi">
+      <img src="img\2-1.webp">
+        <div class="grade">
+          <h3>2年1組探偵事務所<br>〜宝石が消えたナゾの事件を追え〜</h3>
+        </div>
+        <div class="text">
+          事件解決の鍵は数学と英語！？散らばる数式と英文の謎を解き、隠された真実にたどり着く天才探偵を大募集！
+        </div>
+      </div>
+    </div>
+
+      <div class="mogi">
+      <img src="img\2-2.webp">
+        <div class="grade">
+          <h3>2年2組までイッテQ</h3>
+        </div>
+        <div class="text">
+          パスポートを手に様々な国のブースへ！クイズや伝統文化を体験してスタンプを集める世界旅行に出発！
+        </div>
+      </div>
+    </div>
+
+          <div class="mogi">
+      <img src="img\2-3.webp">
+        <div class="grade">
+          <h3>未来からのメッセージ〜お前らのせいだ〜</h3>
+        </div>
+        <div class="text">
+          ここは20XX年の日本。人間に怒り、反抗をもった幽霊でも怪物でもない『なにか』が襲いかかってくる?!
+        </div>
+      </div>
+    </div>
+
+      <div class="mogi">
+      <img src="img\3-1.webp">
+        <div class="grade">
+          <h3>マホさんのハニーハント</h3>
+        </div>
+        <div class="text">
+絵本の世界に迷い込んじゃった！？プーさんと一緒にトロッコに乗って、のんびりあま〜いハチミツの世界を満喫しちゃおう！
+        </div>
+      </div>
+    </div>
+
+          <div class="mogi">
+      <img src="img\3-2.webp">
+        <div class="grade">
+          <h3>パクリーグ</h3>
+        </div>
+        <div class="text">
+3-2教室でサジテレビによる超人気番組、パクリーグを開催！問題に正解して景品をゲットしよう！
+        </div>
+      </div>
+    </div>
+
+      <div class="mogi">
+      <img src="img\3-3.webp">
+        <div class="grade">
+          <h3>鎌館</h3>
+        </div>
+        <div class="text">
+さびれた館には、目の見えぬクローンが。音を出せば”奴ら”が来る。隠れて暗号を解き、脱出しろ。
+        </div>
+      </div>
+    </div>
+
+          <div class="mogi">
+      <img src="img\4-1.webp">
+        <div class="grade">
+          <h3>1組格付けチェック！<br>〜あなたは一流？それとも凡人？〜</h3>
+        </div>
+        <div class="text">
+あなたは本物を見抜けるか！？視覚、聴覚フル活用！みんなで盛り上がる爆笑格付けチャレンジ開催！
+        </div>
+      </div>
+    </div>
+
+      <div class="mogi">
+      <img src="img\4-2.webp">
+        <div class="grade">
+          <h3>キドゲーム</h3>
+        </div>
+        <div class="text">
+誰かの視線を感じる平和イカ遊戯、だるまさんや型抜きなど緊張が走る挑戦を用意しました。
+        </div>
+      </div>
+    </div>
+
+          <div class="mogi">
+      <img src="img\4-3.webp">
+        <div class="grade">
+          <h3>トイレのまなぶさん</h3>
+        </div>
+        <div class="text">
+このトイレに近づくな…そう呼ばれる理由、あなたは知っていますか？※呪われても責任は負いません。
+        </div>
+      </div>
+    </div>
+
+    <div class="mogi">
+      <img src="img\5-1.webp">
+        <div class="grade">
+          <h3>マジカルスギョウ</h3>
+        </div>
+        <div class="text">
+          魔法学校マジカルスギョウへようこそ。カスタムで作れる魔法のワッフルと冷たい飲み物をご用意しています！
+        </div>
+      </div>
+    </div>
+
+        <div class="mogi">
+      <img src="img\5-2.webp">
+        <div class="grade">
+          <h3>おぎやはぎ</h3>
+        </div>
+        <div class="text">
+本格抹茶＆カフェラテ、メロンとブルーハワイのフロート！カラフルで美味しいドリンクをぜひご賞味あれ！ 
+        </div>
+      </div>
+    </div>
+
+            <div class="mogi">
+      <img src="img\5-3.webp">
+        <div class="grade">
+          <h3>下村製麺跡</h3>
+        </div>
+        <div class="text">
+下村製麺跡には、麺職人がいる。夜な夜な麺を打つ音は、本当に麺なのか。うどんであなたを驚かせたい。
+        </div>
+      </div>
+    </div>
+
+    <div class="mogi">
+      <img src="img\6-1.webp">
+        <div class="grade">
+          <h3>ねも茶</h3>
+        </div>
+        <div class="text">
+あの大人気タピオカ屋さんのアレンジが学校に上陸！？映えて可愛い“ねも茶”にぜひ来てください！
+        </div>
+      </div>
+    </div>
+
+        <div class="mogi">
+      <img src="img\6-2.webp">
+        <div class="grade">
+          <h3>とうあま<br>〜筋肉冷やしませんか？〜</h3>
+        </div>
+        <div class="text">
+全てのトレーニー諸君。休息なき筋肉は炎天下のアイスより早く溶ける。たまには甘い「サボり」もプロテインだ。
+        </div>
+      </div>
+    </div>
+
+          <div class="mogi">
+      <img src="img\6-3.webp">
+        <div class="grade">
+          <h3>「山田、冷えてるってよ。」</h3>
+        </div>
+        <div class="text">
+極上の「冷やしきゅうり」「冷やしパイン」「かき氷」<br class="a">「ドリンク」お届けします。<br class="a">クールな時を山田と共に、
+        </div>
+      </div>
+    </div>
+
+        <footer>
+        <div class="school">
+            <h3>茨城県立古河中等教育学校</h3>
+            <p>〒306-0225 茨城県古河市磯部846</p>
+        </div>
+        <br>
+        
+        <div class="flex"><div class="tagF"><h4>TEL</h4></div>
+        <a href="tel:0280-92-4551"><p>0280-92-4551</p></a></div>
+        <div class="flex"><div class="tagF"><h4>HP</h4></div>
+        <a href="https://www.koga-cs.ibk.ed.jp"><p>https://www.koga-cs.ibk.ed.jp</p></a></div>
+        <div class="flex"><div class="tagF"><h4>Email</h4></div>
+        <a href="mailto:koho@koga-cs.ibk.ed.jp"><p>koho@koga-cs.ibk.ed.jp</p></a></div>
+        <br><p style="text-decoration: underline";></p>
+        <address>
+            <p>&copy;2026
+             茨城県立古河中等教育学校文化祭実行委員会 All Rights Reserved.</p>
+        </address>
+    </footer>
+  </body>
+</html>
