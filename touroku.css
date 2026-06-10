@@ -6,22 +6,6 @@ body{
 }
 
 
-header{
-  display:flex;
-  width:100%;
-  height: 300px;
-
-  align-items:center;
-  justify-content:center;
-
-  position:relative;
-  overflow:hidden;
-
-  background-image:url(img/touroku.webp);
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:800px 300px;
-}
 
 p{
   margin: 0;
@@ -45,22 +29,4 @@ h2{
 a{
   color:blue;
   font-size: 1rem;
-}
-
-@media (min-width:1024px){
-
-header{
-  display:flex;
-  width:100%;
-  height: 100vh;
-
-  position:relative;
-  overflow:hidden;
-
-  background-image:url(img/touroku.webp);
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:fit-content;
-}
-
 }
