@@ -58,6 +58,12 @@ header::after{
   margin:0;
 }
 
+#a{
+  font-size:15px;
+  color:blue;
+  border-bottom:1px solid blue;
+}
+
 .date{
   font-weight:700;
   font-size:1.5rem;
@@ -82,8 +88,7 @@ header::after{
 
   z-index: -1;
   }
-
-
+  
   .keyakifes{
   font-weight:700;
   font-size:1.35rem;
@@ -114,16 +119,15 @@ header::after{
   margin-top:5px;
   margin-bottom:10px;
   padding:5px;
-  border:1px solid rgba(182,196,219);
+  border:1px solid rgb(157, 180, 218);
 }
 
 .inform{
   padding:5px 5vw;
-  border:1px solid #bfccef;
   position:relative;
   text-align:center;
   border: none;
-  border-bottom: 1.5px solid rgba(182,196,219,1);
+  border-bottom: 3px solid rgba(182,196,219);
 }
 
 .text{
@@ -162,17 +166,6 @@ header::after{
   right:5%;
 }
 
-.violet{
-  border:solid #9966ff;
-}
-
-.orange{
-  border:solid orange;
-}
-
-.skyblue{
-  border:solid skyblue;
-}
 
 /* ===== タブレット ===== */
 
@@ -239,4 +232,8 @@ header::after{
 
   z-index: -1;
   }  
+
+  .appoint{
+    right:10px;
+  }
 }
