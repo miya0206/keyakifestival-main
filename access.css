@@ -66,6 +66,11 @@ header{
     border-bottom:5px solid#d2e5fd;
 }
 
+.pict{
+  width:400px;
+  height:auto;
+}
+
 h3{
     margin-top: 10px;
 }
