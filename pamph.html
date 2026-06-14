@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+    margin: 0;
+    background: #fff;
+}
+
+img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin:auto;
+}
+</style>
+</head>
+<body>
+
+  
+
+<img src="pamph/1.webp" alt="">
+<img src="pamph/2.webp" alt="">
+<img src="pamph/3.webp" alt="">
+<img src="pamph/4.webp" alt="">
+<img src="pamph/5.webp" alt="">
+<img src="pamph/6.webp" alt="">
+<img src="pamph/7.webp" alt="">
+<img src="pamph/8.webp" alt="">
+<img src="pamph/9.webp" alt="">
+<img src="pamph/10.webp" alt="">
+<img src="pamph/11.webp" alt="">
+<img src="pamph/12.webp" alt="">
+
+       <aside>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="mogi.html">模擬店</a></li>
+        <li><a href="touroku.html">事前登録</a></li> 
+        <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+      // メニューの表示/非表示を切り替える関数
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // メニューが開く・閉じるの切り替え
+      }
+
+      // メニュー項目がクリックされた時の処理
+      document.querySelectorAll(".menu ul li a").forEach((link) => {
+        link.addEventListener("click", function (event) {   
+          event.preventDefault(); // デフォルトのリンク遷移を防ぐ
+          const href = link.getAttribute("href");
+          window.location.href = href; // 新しいページへ遷移（現在のタブ）
+        });
+      });
+    </script>
+    </aside>
+
+</body>
+</html>
