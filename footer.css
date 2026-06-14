@@ -1,8 +1,10 @@
 footer{
+    box-sizing: border-box;
     padding:10px 5vw;
     background-color: #d4deed;
     width: 100%;
     height:fit-content;
+    overflow-x: hidden;
 }
 
 h4,h3{
@@ -10,9 +12,8 @@ h4,h3{
 }
 
 a{
-  font-size:18px; /* 文字サイズ */
-  color:rgba(34, 34, 36,1); /* 文字色 */
-  text-decoration:none; /* 下線を消す */
+  font-size:18px; 
+  color:rgba(34, 34, 36,1); 
 }
 
 .flex{
