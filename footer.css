@@ -2,7 +2,6 @@ footer{
     box-sizing: border-box;
     padding:10px 5vw;
     background-color: #d4deed;
-    width: 100%;
     height:fit-content;
     overflow-x: hidden;
 }
