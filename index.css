@@ -135,6 +135,28 @@ header::after{
     background: linear-gradient(270deg, rgba(117,188,255,1) 0%, rgba(62,159,252,1) 100%);
 }
 
+
+.button1 a {
+    font-size:0.8rem;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 220px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+background: rgb(255, 149, 149);
+background: linear-gradient(270deg, rgba(255, 149, 149, 1) 0%, rgba(255, 107, 107, 1) 100%);
+}
+.button1 a:hover {
+background: rgb(255, 117, 117);
+background: linear-gradient(270deg, rgba(255, 117, 117, 1) 0%, rgba(252, 62, 62, 1) 100%);
+}
+
 .column{
   margin:0 7vw;
   margin-top:5px;
