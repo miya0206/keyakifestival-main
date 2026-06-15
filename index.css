@@ -9,6 +9,13 @@ p{
   margin:0;
 }
 
+img{
+  display:block;
+  width:60%;
+  height:auto;
+  margin:auto;
+}
+
 body{
   margin:0;
   padding:0;
